@@ -3,13 +3,15 @@
 
 function open {
   echo "Let's play a game"
-  echo "There are between 1 and 25 files in the directory."
+  echo "How many files are there in the current directory?"
   echo "Enter your guess:"
 }
 
-answer=$((1+ RANDOM % 25 ))
+answer=$( ls -l | grep -v / | wc -l )
+
 guess=-1
 open
+
 while [ "$guess" != "$answer" ]; do
     read guess
     if [ "$guess" = "$answer" ]; then

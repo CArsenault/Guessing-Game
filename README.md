@@ -1,5 +1,3 @@
-Project guessinggame_sh
-
-Created 10/31/2017 10:40 pm
-
-Project contains 23 lines
+The Guessing Game
+Created on:  Wed Nov  1 16:21:59 EDT 2017
+guessinggame.sh has 25 lines.
